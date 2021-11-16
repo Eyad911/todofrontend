@@ -15,6 +15,7 @@ function App() {
     const tasks = await axios.get(`${BASE_URL}/tasks`);
 
     setTasks(tasks.data);
+    console.log(tasks.data);
   };
 
   return (
